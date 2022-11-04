@@ -1,0 +1,20 @@
+https://davidcasr.medium.com/construir-un-api-rest-con-django-rest-framework-y-apiview-5ea4b2823307
+
+https://www.youtube.com/watch?v=GE0Q8YNKNgs
+Django REST Framework, Tu primer REST API mas Despliegue
+
+**********************************************************************************************************************************************************************
+Abrir consola cmd como admin:
+1 Entorno virtual: pip install virtualenv
+2 Ejecutar entorno y crear carpeta venv: python -m virtualenv venv
+3 Activar entorno virtual en windows con barras invertidas \(sale esto(venv) al inicio del promt y se recomienda dejar una consola cmd para esto: .\venv\Scripts\activate
+4 pip install django
+5 pip install djangorestframework
+6 Crear proyecto drfsimplecrud en el directorio actual, en nuestro caso el directorio raiz: django-admin startproject drfsimplecrud .
+7 python manage.py runserver : arranca el servidor
+8 control c
+9 crear API, creamos una aplicacion: python manage.py startapp projects
+10 drfsimplecrud buscar settings.py: agregar 'projects' y 'rest_framework' en INSTALLED_APPS
+11 python manage.py runserver
+12 MODELO DE DATOS, para generar la tabla en carpeta projects -> models.py:
+13 python manage.py makemigrations: crea el archivo para crear bd en projects -> migrations -> 0001_initial.py
