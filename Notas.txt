@@ -1,8 +1,9 @@
-Probando git..
 https://davidcasr.medium.com/construir-un-api-rest-con-django-rest-framework-y-apiview-5ea4b2823307
 
 https://www.youtube.com/watch?v=GE0Q8YNKNgs
 Django REST Framework, Tu primer REST API mas Despliegue
+
+djoser de django para authenticacion usuarios
 
 **********************************************************************************************************************************************************************
 Abrir consola cmd como admin:
@@ -19,3 +20,27 @@ Abrir consola cmd como admin:
 11 python manage.py runserver
 12 MODELO DE DATOS, para generar la tabla en carpeta projects -> models.py:
 13 python manage.py makemigrations: crea el archivo para crear bd en projects -> migrations -> 0001_initial.py
+14 python manage.py migrate: crea la tablas de nuestro proyecto y las tablas por default
+15 En projects creamos archivo: serializers.py
+16 En projects creamos archvio: api.py(aqui va el viewsets)
+*****************************************************************************************************************************************************************************
+registrarse y login con drf con tabla sql
+
+https://docs.hektorprofe.net/django/api-django-rest/sistema-autenticacion-registro/
+
+https://medium.com/geekculture/register-login-and-logout-users-in-django-rest-framework-51486390c29
+
+https://www.guguweb.com/2022/01/23/django-rest-framework-authentication-the-easy-way/
+
+https://developer.mozilla.org/es/docs/Learn/Server-side/Django/Authentication
+
+
+
+
+https://www.youtube.com/watch?v=8iiDWPXleIc
+Creating a Custom User Model For Authentication | Learn Django REST Framework
+
+user: roboticswarpdesarrollador@gmail.com
+CLAVE SUPERUSUARIO: 746374637463Ft
+
+

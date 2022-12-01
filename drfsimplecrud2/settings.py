@@ -38,8 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'projects',
-    'rest_framework'
+    'accounts',
+    'rest_framework',
+    'rest_framework.authtoken',
 ]
+
+AUTH_USER_MODEL="accounts.User"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -52,6 +56,17 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'drfsimplecrud2.urls'
+
+REST_FRAMEWORK = {
+    "NON_FIELD_ERRORS_KEY":"errors",
+    "DEFAULT_AUTHENTICATION_CLASSES":(
+        "rest_framework.authentication.SessionAuthentication",
+        "rest_framework.authentication.TokenAuthentication"
+    ),
+    "DEFAULT_PERMISSION_CLASSES":("rest_framework.permissions.IsAuthenticated",),
+}
+
+
 
 TEMPLATES = [
     {
